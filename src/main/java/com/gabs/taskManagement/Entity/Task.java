@@ -66,5 +66,4 @@ public class Task {
     public Task(long id) {
         this.id = id;
     }
-
 }

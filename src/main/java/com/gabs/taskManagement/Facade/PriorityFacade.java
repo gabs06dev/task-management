@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class PriorityFacade {
-
     private final PriorityRepository priorityRepository;
 
     public PriorityFacade(PriorityRepository priorityRepository) {

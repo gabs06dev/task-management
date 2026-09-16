@@ -7,6 +7,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 
 
+import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -18,7 +20,6 @@ import java.util.Optional;
  */
 @Component
 public class TaskFacade {
-
     private final TaskRepository taskRepository;
 
     @Autowired
@@ -40,5 +41,9 @@ public class TaskFacade {
 
     public void delete(Task task) {
         taskRepository.delete(task);
+    }
+
+    public List<Task> findOverdueTask(LocalDate currentDate){
+        return  taskRepository.findOverdueTask(currentDate);
     }
 }

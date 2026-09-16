@@ -1,17 +1,15 @@
 package com.gabs.taskManagement.Repository;
 
-import com.gabs.taskManagement.Entity.Status;
+import com.gabs.taskManagement.Entity.TaskStatusHistory;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * Repository for managing status persistence operations.
+ * Repository for managing Task Status History persistence operations.
  *
  * @author Gustavo Barrera
  * @since 2026-09-14
  */
 @Repository
-public interface StatusRepository extends CrudRepository<Status, Long> {
-
-    Status findByName(String name);
+public interface TaskStatusHistoryRepository extends CrudRepository<TaskStatusHistory, Long> {
 }

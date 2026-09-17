@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -38,6 +39,11 @@ public class TaskController {
     @PostMapping
     public Task save(@RequestBody TaskRequest task) {
         return this.service.save(task);
+    }
+
+    @PutMapping
+    public Task update(@RequestBody Task task) {
+        return this.service.update(task);
     }
 
     @DeleteMapping("/{id}")

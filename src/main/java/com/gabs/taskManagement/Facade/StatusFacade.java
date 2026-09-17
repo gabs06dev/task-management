@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class StatusFacade {
-
     private final StatusRepository statusRepository;
 
     public StatusFacade(StatusRepository statusRepository) {
@@ -22,5 +21,9 @@ public class StatusFacade {
 
     public Status save(Status status) {
         return statusRepository.save(status);
+    }
+
+    public Status findByName(String name){
+        return statusRepository.findByName(name);
     }
 }

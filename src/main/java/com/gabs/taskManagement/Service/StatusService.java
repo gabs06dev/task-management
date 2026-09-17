@@ -21,4 +21,8 @@ public class StatusService {
     public Status save (Status status){
         return  statusFacade.save(status);
     }
+
+    public Status findByName(String name){
+        return  statusFacade.findByName(name);
+    }
 }

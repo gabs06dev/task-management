@@ -36,10 +36,10 @@ The API provides basic operations to create, retrieve, update, and delete tasks,
 
 ## Version
 
-| Version | Description |
-|---|---|
-| 1.0.0 | Initial version with basic CRUD operations |
-
+| Version | Description                                  |
+|---------|----------------------------------------------|
+| 1.0.0   | Initial version with basic CRUD operations   |
+| 1.1.0   | Funtion to register status changes on a task |
 
 ### Requirements
 
